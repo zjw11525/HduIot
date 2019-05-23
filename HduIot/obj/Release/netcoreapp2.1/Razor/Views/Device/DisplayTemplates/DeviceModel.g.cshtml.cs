@@ -75,7 +75,7 @@ using HduIot.Models;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(128, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2165862622f44c32aca289e2afa13802", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320515ee184a4ef79a66c4405e4ed731", async() => {
                 BeginContext(207, 12, false);
 #line 6 "C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\Views\Device\DisplayTemplates\DeviceModel.cshtml"
                                                                                      Write(Model.Switch);
