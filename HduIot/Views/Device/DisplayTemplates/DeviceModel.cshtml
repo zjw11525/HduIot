@@ -1,0 +1,9 @@
+﻿@model HduIot.Models.DeviceModel
+
+    <tr>
+        <td scope="row">@Model.Id</td>
+        <td>@Model.Name</td>
+        <td><a asp-controller="Device" asp-action="ChangeSwitch" asp-route-Id="@Model.Id">@Model.Switch</a></td>
+        <td>@Model.Message</td>
+        <td>@Model.DeviceKey</td>
+    </tr>

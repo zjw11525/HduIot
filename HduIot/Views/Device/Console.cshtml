@@ -1,0 +1,23 @@
+﻿@using HduIot.Models
+@model IEnumerable<DeviceModel>
+
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">设备Id</th>
+                    <th scope="col">设备名</th>
+                    <th scope="col">开关量</th>
+                    <th scope="col">设备消息</th>
+                    <th scope="col">设备秘钥</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.DisplayForModel()
+            </tbody>
+        </table>
+        <a asp-action="Add" asp-route-Id="@ViewBag.Id">添加设备</a>
+    </div>
+</div>
