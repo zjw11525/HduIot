@@ -79,7 +79,7 @@ using HduIot.Models;
             WriteLiteral("\r\n            </tbody>\r\n        </table>\r\n        ");
             EndContext();
             BeginContext(617, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22a51479df9a45c6908938f77a04454b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "309de6c24f2045a19f95b775f3cc283f", async() => {
                 BeginContext(664, 4, true);
                 WriteLiteral("添加设备");
                 EndContext();

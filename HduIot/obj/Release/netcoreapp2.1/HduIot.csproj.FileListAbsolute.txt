@@ -5,7 +5,6 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Release\netcoreapp
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Release\netcoreapp2.1\HduIot.pdb
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Release\netcoreapp2.1\HduIot.Views.dll
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Release\netcoreapp2.1\HduIot.Views.pdb
-C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.RazorAssemblyInfo.cache
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.RazorAssemblyInfo.cs
