@@ -35,3 +35,4 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.dll
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.pdb
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.csproj.CopyComplete
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\HduIot.csprojAssemblyReference.cache

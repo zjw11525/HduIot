@@ -13,6 +13,7 @@ using HduIot.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using HduIot.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace HduIot
 {
@@ -41,12 +42,13 @@ namespace HduIot
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.Configure<IISOptions>(options =>
-            {
-                options.ForwardClientCertificate = false;
-            });
+            //services.Configure<IISOptions>(options =>
+            //{
+            //    options.ForwardClientCertificate = false;
+            //});
 
             services.AddSingleton<IDeviceService, DeviceMemoryService>();
         }

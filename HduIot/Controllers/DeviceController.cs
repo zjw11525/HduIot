@@ -16,18 +16,26 @@ namespace HduIot.Controllers
             _deviceService = deviceService;
         }
 
-        public IActionResult Add(int DeviceId)
+        public IActionResult Add()
         {
             ViewBag.Title = "添加设备";
 
             return View(new DeviceModel
             {
-                Id = DeviceId,
-                Switch = false,
-                Message = "Null"
+                Message = "暂无"
             });
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Add(DeviceModel device)
+        {
+            if (ModelState.IsValid)
+            {
+                await _deviceService.AddAsync(device);
+            }
+
+            return RedirectToAction("Console");
+        }
         public async Task<IActionResult> Console()
         {
             ViewBag.Title = "所有设备";
