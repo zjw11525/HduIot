@@ -3,6 +3,7 @@
 <div class="container">
     <form asp-action="Add">
         <div><label>  </label></div>
+        <input type="hidden" asp-for="User" />
         <input type="hidden" asp-for="Message" />
         <div class="form-group row">
             <label asp-for="Name" class="col-sm-2 col-form-label">设备名称</label>

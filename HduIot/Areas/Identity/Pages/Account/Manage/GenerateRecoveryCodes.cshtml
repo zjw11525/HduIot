@@ -1,0 +1,27 @@
+﻿@page
+@model GenerateRecoveryCodesModel
+@{
+    ViewData["Title"] = "生成双重认证验证码";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+@Html.Partial("_StatusMessage", Model.StatusMessage)
+<h4>@ViewData["Title"]</h4>
+<div class="alert alert-warning" role="alert">
+    <p>
+        <span class="glyphicon glyphicon-warning-sign"></span>
+        <strong>请保存好您的密码</strong>
+    </p>
+    <p>
+        如果您丢失了设备并且没有恢复代码，您将无法访问您的帐户。
+    </p>
+    <p>
+        生成新的恢复代码不会更改验证应用程序中使用的密钥。如果你想换密钥
+        在验证应用程序中使用<a asp-page="./ResetAuthenticator">重置验证器密钥。</a>
+    </p>
+</div>
+<div>
+    <form method="post" class="form-group">
+        <button class="btn btn-danger" type="submit">生成恢复验证码</button>
+    </form>
+</div>

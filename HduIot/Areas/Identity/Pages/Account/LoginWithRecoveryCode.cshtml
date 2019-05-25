@@ -1,0 +1,28 @@
+﻿@page
+@model LoginWithRecoveryCodeModel
+@{
+    ViewData["Title"] = "重置密码验证码";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+<p>
+    您已请求使用重置密码验证码登录。只有在您提供登录或禁用双重验证并再次登录时的身份验证程序验证码。
+</p>
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.RecoveryCode"></label>
+                <input asp-for="Input.RecoveryCode" class="form-control" autocomplete="off" />
+                <span asp-validation-for="Input.RecoveryCode" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-default">登录</button>
+        </form>
+    </div>
+</div>
+ 
+ @section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

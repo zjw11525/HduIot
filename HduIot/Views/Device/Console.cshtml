@@ -3,21 +3,33 @@
 
 <div class="container">
     <div class="row">
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">设备Id</th>
-                    <th scope="col">设备名</th>
-                    <th scope="col">开关量</th>
-                    <th scope="col">设备消息</th>
-                    <th scope="col">设备秘钥</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @Html.DisplayForModel()
-            </tbody>
-        </table>
-        <a asp-controller="Device" asp-action="Add">添加设备</a>
+        @if (@ViewBag.IsLogin == true)
+        {
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">设备Id</th>
+                        <th scope="col">设备名</th>
+                        <th scope="col">开关量</th>
+                        <th scope="col">设备消息</th>
+                        <th scope="col">设备秘钥</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @Html.DisplayForModel()
+                </tbody>
+            </table>
+            <a asp-controller="Device" asp-action="Add">添加设备</a>
+        }
+        else
+        {
+            <h2>登录用户才能添加设备</h2><br />
+
+            <h4>已有本站账号</h4>
+            <a asp-area="Identity" asp-page="/Account/Login">点击登录</a>
+            <h4>注册为新用户</h4>
+            <a asp-area="Identity" asp-page="/Account/Register">立即注册</a>
+        }
     </div>
 </div>

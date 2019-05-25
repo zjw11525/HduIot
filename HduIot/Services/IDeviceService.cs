@@ -8,10 +8,10 @@ namespace HduIot.Services
 {
     public interface IDeviceService
     {
-        Task<IEnumerable<DeviceModel>> GetllAllAsync();
+        Task<IEnumerable<DeviceModel>> GetllAllAsync(string userName);
         Task<DeviceModel> GetByIdAsync(int Id);
         Task AddAsync(DeviceModel device);
         Task SwitchChange(int Id);
-
+        Task DeleteAsync(int Id);
     }
 }

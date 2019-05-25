@@ -1,0 +1,56 @@
+﻿@page
+@model TwoFactorAuthenticationModel
+@{
+    ViewData["Title"] = "双重认证";
+}
+
+
+<h4>@ViewData["Title"]</h4>
+@if (Model.Is2faEnabled)
+{
+    if (Model.RecoveryCodesLeft == 0)
+    {
+        <div class="alert alert-danger">
+            <strong>没有重置密码代码</strong>
+            <p>在 <a asp-page="./GenerateRecoveryCodes">通过重置密码代码登录前请先</a>生成重置密码代码 </p>
+        </div>
+    }
+    else if (Model.RecoveryCodesLeft == 1)
+    {
+        <div class="alert alert-danger">
+            <strong>已经重置过一次</strong>
+            <p>You can <a asp-page="./GenerateRecoveryCodes">生成新的重置代码</a>.</p>
+        </div>
+    }
+    else if (Model.RecoveryCodesLeft <= 3)
+    {
+        <div class="alert alert-warning">
+            <strong>已生成 @Model.RecoveryCodesLeft 重置代码。</strong>
+            <p>你需要 <a asp-page="./GenerateRecoveryCodes">重新生成</a>.</p>
+        </div>
+    }
+
+    if (Model.IsMachineRemembered)
+    {
+        <form method="post" style="display: inline-block">
+            <button type="submit" class="btn btn-default">删除记录</button>
+        </form>
+    }
+    <a asp-page="./Disable2fa" class="btn btn-default">双重认证</a>
+    <a asp-page="./GenerateRecoveryCodes" class="btn btn-default">重置恢复代码</a>
+}
+
+
+@if (!Model.HasAuthenticator)
+{
+    <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="btn btn-default">添加验证应用</a>
+}
+else
+{
+    <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="btn btn-default">设置验证应用</a>
+    <a id="reset-authenticator" asp-page="./ResetAuthenticator" class="btn btn-default">重设验证应用</a>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

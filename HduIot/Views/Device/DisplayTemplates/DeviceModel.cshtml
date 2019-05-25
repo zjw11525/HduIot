@@ -6,4 +6,5 @@
         <td><a asp-controller="Device" asp-action="ChangeSwitch" asp-route-Id="@Model.Id">@Model.Switch</a></td>
         <td>@Model.Message</td>
         <td>@Model.DeviceKey</td>
+        <td><a asp-controller="Device" asp-action="Delete" asp-route-Id="@Model.Id">删除设备</a></td>
     </tr>

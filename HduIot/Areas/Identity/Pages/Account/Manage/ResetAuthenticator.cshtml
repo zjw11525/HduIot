@@ -1,0 +1,26 @@
+﻿@page
+@model ResetAuthenticatorModel
+@{
+    ViewData["Title"] = "重置验证密码";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+@Html.Partial("_StatusMessage", Model.StatusMessage)
+<h4>@ViewData["Title"]</h4>
+<div class="alert alert-warning" role="alert">
+    <p>
+        <span class="glyphicon glyphicon-warning-sign"></span>
+        <strong>如果您重置了验证密码，则在重新配置之前，验证器应用程序将无法工作。</strong>
+    </p>
+    <p>
+        在验证身份验证程序应用程序之前，此过程禁用双重验证。
+        如果您没有完成身份验证程序应用程序配置，您可能会失去对帐户的访问权。
+    </p>
+</div>
+<div>
+    <form id="reset-authenticator-form" method="post" class="form-group">
+        <button id="reset-authenticator-button" class="btn btn-danger" type="submit">
+            重置验证密码
+        </button>
+    </form>
+</div>

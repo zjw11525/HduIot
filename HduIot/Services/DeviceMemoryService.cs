@@ -1,4 +1,5 @@
 ﻿using HduIot.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,52 +7,59 @@ using System.Threading.Tasks;
 
 namespace HduIot.Services
 {
+    public class DeviceContext : DbContext
+    {
+        public DbSet<DeviceModel> Devices { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=HduIot-DeviceDb;Trusted_Connection=True;MultipleActiveResultSets=true");
+        }
+    }
     public class DeviceMemoryService:IDeviceService
     {
-        private readonly List<DeviceModel> _devices = new List<DeviceModel>();
-        public DeviceMemoryService()
+        DeviceContext _Devicedb = new DeviceContext();
+
+        public Task<IEnumerable<DeviceModel>> GetllAllAsync(string userName)
         {
-            _devices.Add(new DeviceModel
+            List<DeviceModel> devices = new List<DeviceModel>();
+            foreach (DeviceModel device in _Devicedb.Devices)
             {
-                Id = 1,
-                Name = "人脸识别门禁",
-                Switch = false,
-                Message = "Hello",
-                DeviceKey = "123456"
-            });
-            _devices.Add(new DeviceModel
-            {
-                Id = 2,
-                Name = "人脸识别门禁",
-                Switch = false,
-                Message = "用户开锁",
-                DeviceKey = "111111"
-            });
-        }
-        public Task<IEnumerable<DeviceModel>> GetllAllAsync()
-        {
-            return Task.Run(() => _devices.AsEnumerable());
+                if (device.User == userName)
+                {
+                    devices.Add(device);
+                }
+            }
+            return Task.Run(() => devices.AsEnumerable());
+            //return Task.Run(() => _Devicedb.Devices.AsEnumerable());
         }
 
         public Task<DeviceModel> GetByIdAsync(int id)
         {
-            return Task.Run(() => _devices.FirstOrDefault(x => x.Id == id));
+            return Task.Run(() => _Devicedb.Devices.FirstOrDefault(x => x.Id == id));
         }
 
         public Task AddAsync(DeviceModel device)
         {
-            var maxId = _devices.Max(x => x.Id);
-            device.Id = maxId + 1;
-            _devices.Add(device);
+            _Devicedb.Devices.Add(device);
+            _Devicedb.SaveChanges();
+            return Task.CompletedTask;
+        }
+        public Task DeleteAsync(int Id)
+        {
+            var device = _Devicedb.Devices.SingleOrDefault(x => x.Id == Id);
+            if (device != null)
+            {
+                _Devicedb.Devices.Remove(device);
+            }
+            _Devicedb.SaveChanges();
             return Task.CompletedTask;
         }
         public Task SwitchChange(int Id)
         {
-            if (Id >= 1)
-            {
-                Id--;
-                _devices[Id].Switch = !_devices[Id].Switch;
-            }
+            var device = _Devicedb.Devices.SingleOrDefault(x => x.Id == Id);
+            device.Switch = !device.Switch;
+            _Devicedb.SaveChanges();
+           
             return Task.CompletedTask;
         }
     }

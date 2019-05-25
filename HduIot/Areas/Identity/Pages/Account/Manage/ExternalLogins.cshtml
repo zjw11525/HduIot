@@ -1,0 +1,52 @@
+﻿@page
+@model ExternalLoginsModel
+@{
+    ViewData["Title"] = "管理其他账户登录";
+}
+
+@Html.Partial("_StatusMessage", Model.StatusMessage)
+@if (Model.CurrentLogins?.Count > 0)
+{
+    <h4>用其他账号登录</h4>
+    <table class="table">
+        <tbody>
+            @foreach (var login in Model.CurrentLogins)
+            {
+                <tr>
+                    <td>@login.LoginProvider</td>
+                    <td>
+                        @if (Model.ShowRemoveButton)
+                        {
+                        <form id="remove-login" asp-page-handler="RemoveLogin" method="post">
+                            <div>
+                                <input asp-for="@login.LoginProvider" name="LoginProvider" type="hidden" />
+                                <input asp-for="@login.ProviderKey" name="ProviderKey" type="hidden" />
+                                <button type="submit" class="btn btn-default" title="移除登录账户 @login.LoginProvider ">移除</button>
+                            </div>
+                        </form>
+                        }
+                        else
+                        {
+                        @: &nbsp;
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@if (Model.OtherLogins?.Count > 0)
+{
+    <h4>使用其他账号登录</h4>
+    <hr />
+    <form id="link-login-form" asp-page-handler="LinkLogin" method="post" class="form-horizontal">
+        <div id="socialLoginList">
+            <p>
+                @foreach (var provider in Model.OtherLogins)
+                {
+                    <button id="link-login-button" type="submit" class="btn btn-default" name="provider" value="@provider.Name" title="使用账户 @provider.DisplayName 登录">@provider.DisplayName</button>
+                }
+            </p>
+        </div>
+    </form>
+}

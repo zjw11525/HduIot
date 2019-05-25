@@ -1,0 +1,26 @@
+﻿@page
+@model Disable2faModel
+@{
+    ViewData["Title"] = "禁用双重认证";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="alert alert-warning" role="alert">
+    <p>
+        <span class="glyphicon glyphicon-warning-sign"></span>
+        <strong>禁用双重认证</strong>
+    </p>
+    <p>
+        禁用双重认证不会更改验证应用程序中使用的密钥。如果你想换钥匙
+        在验证应用程序中使用<a asp-page="./ResetAuthenticator">重置</a>
+    </p>
+</div>
+
+<div>
+    <form method="post" class="form-group">
+        <button class="btn btn-danger" type="submit">禁用双重认证</button>
+    </form>
+</div>
