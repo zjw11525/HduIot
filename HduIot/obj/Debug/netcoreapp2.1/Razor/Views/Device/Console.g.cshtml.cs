@@ -89,7 +89,7 @@ using HduIot.Models;
             WriteLiteral("\r\n                </tbody>\r\n            </table>\r\n            ");
             EndContext();
             BeginContext(732, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c250b741a57e4810ad86b095e735c597", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "314bc6e05c3e43168a5d9113de253aa2", async() => {
                 BeginContext(776, 4, true);
                 WriteLiteral("添加设备");
                 EndContext();
@@ -126,7 +126,7 @@ using HduIot.Models;
             WriteLiteral("            <h4>已有本站账号</h4>\r\n            ");
             EndContext();
             BeginContext(904, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a97a5caaff174c369b17df10c2b2eebb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c1cc86be9c1544d0a7617b55c2f2c01d", async() => {
                 BeginContext(953, 4, true);
                 WriteLiteral("点击登录");
                 EndContext();
@@ -150,7 +150,7 @@ using HduIot.Models;
             WriteLiteral("\r\n            <h4>注册为新用户</h4>\r\n            ");
             EndContext();
             BeginContext(1004, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae63705a23284a41b53db417510afdc6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "537df37397664932863bc058f3cd7771", async() => {
                 BeginContext(1056, 4, true);
                 WriteLiteral("立即注册");
                 EndContext();

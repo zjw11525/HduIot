@@ -76,7 +76,7 @@ using HduIot.Models;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(128, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "594b7a30e4624fdcaea3cb538ade3e4f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8983bb8564ac4937b93758bf94d9ed95", async() => {
                 BeginContext(207, 12, false);
 #line 6 "C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\Views\Device\DisplayTemplates\DeviceModel.cshtml"
                                                                                      Write(Model.Switch);
@@ -137,7 +137,7 @@ using HduIot.Models;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(310, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee519d388d20418298926ee16076bb09", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8e85d8b12004931adefe2ebf9d890de", async() => {
                 BeginContext(382, 4, true);
                 WriteLiteral("删除设备");
                 EndContext();

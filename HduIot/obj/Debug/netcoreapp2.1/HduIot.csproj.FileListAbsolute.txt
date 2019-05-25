@@ -35,7 +35,6 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Views\Device\Console.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Views\Device\DisplayTemplates\DeviceModel.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Views\Device\Add.g.cshtml.cs
-C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
@@ -69,3 +68,6 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Debug\netcoreapp2.1\MQTTServer.dll
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Debug\netcoreapp2.1\MQTTServer.pdb

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MqttServerTest;
 
 namespace HduIot.Services
 {
@@ -58,6 +59,7 @@ namespace HduIot.Services
         {
             var device = _Devicedb.Devices.SingleOrDefault(x => x.Id == Id);
             device.Switch = !device.Switch;
+            device.Message = MqttServerTest.DeviceMessage.Message;
             _Devicedb.SaveChanges();
            
             return Task.CompletedTask;

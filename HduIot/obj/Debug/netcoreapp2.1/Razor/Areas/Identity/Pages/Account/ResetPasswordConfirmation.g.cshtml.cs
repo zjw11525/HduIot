@@ -76,7 +76,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h2>\r\n<p>\r\n    密码已重置，请点击");
             EndContext();
             BeginContext(158, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98403879358e4641bac698278062ce0d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8144d5d73a5d4c67b9d91d1ab5222aa1", async() => {
                 BeginContext(180, 4, true);
                 WriteLiteral("重新登录");
                 EndContext();
