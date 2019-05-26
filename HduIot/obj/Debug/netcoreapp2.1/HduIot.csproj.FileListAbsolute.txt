@@ -71,3 +71,5 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Debug\netcoreapp2.1\MQTTServer.dll
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Debug\netcoreapp2.1\MQTTServer.pdb
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Debug\netcoreapp2.1\MQTTClient.dll
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\bin\Debug\netcoreapp2.1\MQTTClient.pdb

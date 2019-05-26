@@ -62,7 +62,8 @@ namespace HduIot.Services
             DeviceContext _Devicedb = new DeviceContext();
             var device = _Devicedb.Devices.SingleOrDefault(x => x.Id == Id);
             device.Switch = !device.Switch;
-            _Devicedb.SaveChanges();     
+            _Devicedb.SaveChanges();
+            MQTTClient.Program.Publish($"{device.User}:Server",$"{device.Name},{device.Switch.ToString()}");
             return Task.CompletedTask;
         }
     }

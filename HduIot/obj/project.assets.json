@@ -4714,6 +4714,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "MQTTClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "MQTTnet": "2.4.0"
+        },
+        "compile": {
+          "bin/placeholder/MQTTClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MQTTClient.dll": {}
+        }
+      },
       "MQTTServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12845,6 +12858,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "MQTTClient/1.0.0": {
+      "type": "project",
+      "path": "../MQTTClient/MQTTClient.csproj",
+      "msbuildProject": "../MQTTClient/MQTTClient.csproj"
+    },
     "MQTTServer/1.0.0": {
       "type": "project",
       "path": "../MQTTServer/MQTTServer.csproj",
@@ -12853,6 +12871,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "MQTTClient >= 1.0.0",
       "MQTTServer >= 1.0.0",
       "MQTTnet >= 2.4.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -12891,6 +12910,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Administrator\\Desktop\\ASP.NET core\\HduIot\\MQTTClient\\MQTTClient.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\ASP.NET core\\HduIot\\MQTTClient\\MQTTClient.csproj"
+            },
             "C:\\Users\\Administrator\\Desktop\\ASP.NET core\\HduIot\\MQTTServer\\MQTTServer.csproj": {
               "projectPath": "C:\\Users\\Administrator\\Desktop\\ASP.NET core\\HduIot\\MQTTServer\\MQTTServer.csproj"
             }

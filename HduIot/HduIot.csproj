@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MQTTClient\MQTTClient.csproj" />
     <ProjectReference Include="..\MQTTServer\MQTTServer.csproj" />
   </ItemGroup>
 

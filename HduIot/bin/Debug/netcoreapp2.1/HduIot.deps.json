@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "HduIot/1.0.0": {
         "dependencies": {
+          "MQTTClient": "1.0.0",
           "MQTTServer": "1.0.0",
           "MQTTnet": "2.4.0",
           "Microsoft.AspNetCore.App": "2.1.1",
@@ -518,6 +519,17 @@
         "dependencies": {
           "System.Runtime": "4.3.0",
           "System.Runtime.Handles": "4.3.0"
+        }
+      },
+      "MQTTClient/1.0.0": {
+        "dependencies": {
+          "MQTTnet": "2.4.0"
+        },
+        "runtime": {
+          "MQTTClient.dll": {}
+        },
+        "compile": {
+          "MQTTClient.dll": {}
         }
       },
       "MQTTServer/1.0.0": {
@@ -3862,6 +3874,11 @@
       "sha512": "sha512-k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
       "path": "system.threading.threadpool/4.3.0",
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
+    },
+    "MQTTClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MQTTServer/1.0.0": {
       "type": "project",

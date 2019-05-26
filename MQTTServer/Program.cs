@@ -74,15 +74,9 @@ namespace MqttServerTest
                     {
                         ConnectionValidator = p =>
                         {
-                            foreach (DeviceModel device in devices.Devices)
-                            {
-                                if (device.DeviceKey == p.Password)
-                                {
-                                    if((device.Name == p.Username) || (device.User == p.Username))
-                                        
-                                    return MqttConnectReturnCode.ConnectionAccepted;
-                                }
-                            }
+                            DeviceModel device = devices.Devices.SingleOrDefault(x => x.DeviceKey == p.Password);
+                            if ((device.Name == p.Username) || (device.User == p.Username))
+                                return MqttConnectReturnCode.ConnectionAccepted;
 
                             return MqttConnectReturnCode.ConnectionRefusedBadUsernameOrPassword;
                         }
@@ -127,7 +121,17 @@ namespace MqttServerTest
             if (_topic.Length < 2) return;
             if (_message[0] != null)
             {
-                var device = devices.Devices.SingleOrDefault(x => x.Name == _message[0]);//这个设备存在
+                var dbSet = devices.Devices.Where(t => t.User == _topic[0]);
+                int count = dbSet.Count();
+                DeviceModel device = new DeviceModel();
+                foreach (DeviceModel _device in dbSet)
+                {
+                    if (_device.Name == _message[0])
+                    {
+                        device = _device;
+                    }
+                }
+                //var device = devices.Devices.SingleOrDefault(x => x.Name == _message[0]);//这个设备存在
                 if (device == null) return;
                 if (device.User == _topic[0])//这个设备属于当前访问用户
                 {

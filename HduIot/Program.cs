@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MqttServerTest;
+using MQTTClient;
 
 namespace HduIot
 {
@@ -16,6 +17,7 @@ namespace HduIot
         public static void Main(string[] args)
         {
             MqttServerTest.Program.Main();//开启MQTT服务
+            MQTTClient.Program.Main();
             CreateWebHostBuilder(args).Build().Run();
         }
 
