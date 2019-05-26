@@ -15,7 +15,7 @@ namespace HduIot
     {
         public static void Main(string[] args)
         {
-            MqttServerTest.Program.Main();
+            MqttServerTest.Program.Main();//开启MQTT服务
             CreateWebHostBuilder(args).Build().Run();
         }
 

@@ -4718,7 +4718,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "MQTTnet": "2.4.0"
+          "MQTTnet": "2.4.0",
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1"
         },
         "compile": {
           "bin/placeholder/MQTTServer.dll": {}

@@ -7,15 +7,30 @@ using MQTTnet.Core.Server;
 using System;
 using System.Text;
 using System.Threading;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace MqttServerTest
 {
-    public static class DeviceMessage
+    public class DeviceModel
     {
-        public static bool Switch{ get; set; }
-        public static string Message{ get; set; }
+        public int Id { get; set; }
+        public string User { get; set; }
+        public string Name { get; set; }
+        public bool Switch { get; set; }
+        public string Message { get; set; }
+        public string DeviceKey { get; set; }
     }
-    public static class Program
+    public class DeviceContext : DbContext
+    {
+        public DbSet<DeviceModel> Devices { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=HduIot-DeviceDb;Trusted_Connection=True;MultipleActiveResultSets=true");
+        }
+    }
+
+    public class Program
     {
         public static MqttServer mqttServer = null;
         public static void Main()
@@ -49,6 +64,8 @@ namespace MqttServerTest
 
         public static void StartMqttServer()
         {
+            DeviceContext devices = new DeviceContext();
+
             if (mqttServer == null)
             {
                 try
@@ -57,15 +74,17 @@ namespace MqttServerTest
                     {
                         ConnectionValidator = p =>
                         {
-                            if (p.ClientId == "c001")
+                            foreach (DeviceModel device in devices.Devices)
                             {
-                                if (p.Username != "u001" || p.Password != "p001")
+                                if (device.DeviceKey == p.Password)
                                 {
-                                    return MqttConnectReturnCode.ConnectionRefusedBadUsernameOrPassword;
+                                    if((device.Name == p.Username) || (device.User == p.Username))
+                                        
+                                    return MqttConnectReturnCode.ConnectionAccepted;
                                 }
                             }
 
-                            return MqttConnectReturnCode.ConnectionAccepted;
+                            return MqttConnectReturnCode.ConnectionRefusedBadUsernameOrPassword;
                         }
                     };
 
@@ -97,8 +116,35 @@ namespace MqttServerTest
 
         public static void MqttServer_ApplicationMessageReceived(object sender, MqttApplicationMessageReceivedEventArgs e)
         {
+            DeviceContext devices = new DeviceContext();
+            string topic = e.ApplicationMessage.Topic;
+            string message = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
             Console.WriteLine($"客户端[{e.ClientId}]>> 主题：{e.ApplicationMessage.Topic} 负荷：{Encoding.UTF8.GetString(e.ApplicationMessage.Payload)} Qos：{e.ApplicationMessage.QualityOfServiceLevel} 保留：{e.ApplicationMessage.Retain}");
-            DeviceMessage.Message = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+
+            string[] _topic = topic.Split(':');
+            string[] _message = message.Split(',');
+
+            if (_topic.Length < 2) return;
+            if (_message[0] != null)
+            {
+                var device = devices.Devices.SingleOrDefault(x => x.Name == _message[0]);//这个设备存在
+                if (device == null) return;
+                if (device.User == _topic[0])//这个设备属于当前访问用户
+                {
+                    if (_message[1] != null)
+                    {
+                        if ((_message[1] == "true") || (_message[1] == "false"))
+                        device.Switch = Convert.ToBoolean(_message[1]);
+                        devices.SaveChanges();
+                    }
+                    if (_message.Length < 3) return;
+                    if ((_message[2] != null)&&(_topic[1] == device.Name))//只有设备端发布的消息才进入数据库
+                    {
+                        device.Message = _message[2];
+                        devices.SaveChanges();
+                    }
+                }
+            }
         }
 
         public static void MqttNetTrace_TraceMessagePublished(object sender, MqttNetTraceMessagePublishedEventArgs e)
