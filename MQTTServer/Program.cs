@@ -26,7 +26,8 @@ namespace MqttServerTest
         public DbSet<DeviceModel> Devices { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=HduIot-DeviceDb;Trusted_Connection=True;MultipleActiveResultSets=true");
+            options.UseSqlServer("Server=iZ3rzhvtee8j5iZ;Database=DeviceDb;Trusted_Connection=True;MultipleActiveResultSets=true");
+            //options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=HduIot-DeviceDb;Trusted_Connection=True;MultipleActiveResultSets=true");
         }
     }
 

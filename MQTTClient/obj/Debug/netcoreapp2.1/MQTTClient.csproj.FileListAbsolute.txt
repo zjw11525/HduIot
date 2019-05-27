@@ -2,7 +2,6 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\bin\Debug\netcorea
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\bin\Debug\netcoreapp2.1\MQTTClient.runtimeconfig.json
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\bin\Debug\netcoreapp2.1\MQTTClient.runtimeconfig.dev.json
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\bin\Debug\netcoreapp2.1\MQTTClient.dll
-C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\obj\Debug\netcoreapp2.1\MQTTClient.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\obj\Debug\netcoreapp2.1\MQTTClient.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\obj\Debug\netcoreapp2.1\MQTTClient.AssemblyInfoInputs.cache
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTClient\obj\Debug\netcoreapp2.1\MQTTClient.AssemblyInfo.cs

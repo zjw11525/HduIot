@@ -91,7 +91,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h4>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <p>您的帐户包含您提供给我们的个人数据。此页面允许您下载或删除该数据。</p>\r\n        <p>\r\n            <strong>删除此数据将永久删除您的帐户，并且无法恢复。</strong>\r\n        </p>\r\n        ");
             EndContext();
             BeginContext(350, 159, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e7166a6f6e041a1a58603d5cc0622b9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8325f6133b1042e68f5c11255916f592", async() => {
                 BeginContext(421, 81, true);
                 WriteLiteral("\r\n            <button class=\"btn btn-default\" type=\"submit\">下载</button>\r\n        ");
                 EndContext();
@@ -118,7 +118,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n        <p>\r\n            ");
             EndContext();
             BeginContext(536, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "038b60993b6844619e9f0bed966695a0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bcbceed10b2b45f39ef2d0cca14ef154", async() => {
                 BeginContext(593, 2, true);
                 WriteLiteral("删除");
                 EndContext();
@@ -145,7 +145,7 @@ Write(ViewData["Title"]);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(661, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a5e8bd037b694bbb9a3071ff73e572d8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "294edd313f644e5db991644ba1d77e50", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

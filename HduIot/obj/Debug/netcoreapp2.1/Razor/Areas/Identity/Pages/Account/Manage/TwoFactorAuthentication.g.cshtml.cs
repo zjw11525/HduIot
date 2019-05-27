@@ -105,7 +105,7 @@ Write(ViewData["Title"]);
             WriteLiteral("        <div class=\"alert alert-danger\">\r\n            <strong>没有重置密码代码</strong>\r\n            <p>在 ");
             EndContext();
             BeginContext(290, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e78623857b684b98bdc09eb3dcec1371", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e14c6642c2974056992f56e4013671e4", async() => {
                 BeginContext(328, 13, true);
                 WriteLiteral("通过重置密码代码登录前请先");
                 EndContext();
@@ -137,7 +137,7 @@ Write(ViewData["Title"]);
             WriteLiteral("        <div class=\"alert alert-danger\">\r\n            <strong>已经重置过一次</strong>\r\n            <p>You can ");
             EndContext();
             BeginContext(537, 50, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e89799a28bab4315afcd98ab98520f5f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d75e1995ade4058a2f054f0a1a41edc", async() => {
                 BeginContext(575, 8, true);
                 WriteLiteral("生成新的重置代码");
                 EndContext();
@@ -179,7 +179,7 @@ Write(ViewData["Title"]);
             WriteLiteral(" 重置代码。</strong>\r\n            <p>你需要 ");
             EndContext();
             BeginContext(795, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a106be0f108a4872874eeade04d2e340", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "112338de71c940fc8e51296e206c7f9d", async() => {
                 BeginContext(833, 4, true);
                 WriteLiteral("重新生成");
                 EndContext();
@@ -212,7 +212,7 @@ Write(ViewData["Title"]);
             WriteLiteral("        ");
             EndContext();
             BeginContext(924, 140, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "683759a248204faf95030c2506bdd313", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a343c0647ce420f82dad55702b8165c", async() => {
                 BeginContext(974, 83, true);
                 WriteLiteral("\r\n            <button type=\"submit\" class=\"btn btn-default\">删除记录</button>\r\n        ");
                 EndContext();
@@ -245,7 +245,7 @@ Write(ViewData["Title"]);
             WriteLiteral("    ");
             EndContext();
             BeginContext(1077, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66730325651549e18409308e48824feb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "248b6a41e3e846ca89d878f5e1a9ed44", async() => {
                 BeginContext(1128, 4, true);
                 WriteLiteral("双重认证");
                 EndContext();
@@ -268,7 +268,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(1142, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4506c3f6b34491a9ea7824e1a05bb4d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51bfb64a654744788a11735946132f89", async() => {
                 BeginContext(1204, 6, true);
                 WriteLiteral("重置恢复代码");
                 EndContext();
@@ -308,7 +308,7 @@ Write(ViewData["Title"]);
             WriteLiteral("    ");
             EndContext();
             BeginContext(1261, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05e12e23d15b4f7583ce72ec4076598c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef116d0228454e8fad0a2d35e2d00faf", async() => {
                 BeginContext(1347, 6, true);
                 WriteLiteral("添加验证应用");
                 EndContext();
@@ -342,7 +342,7 @@ else
             WriteLiteral("    ");
             EndContext();
             BeginContext(1375, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b3c4c61770d4701819ca13476c120d0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "614d6865f25046ee9d43f315547d2358", async() => {
                 BeginContext(1461, 6, true);
                 WriteLiteral("设置验证应用");
                 EndContext();
@@ -366,7 +366,7 @@ else
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(1477, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e982190f9a6049b1a166fcc6cdedca08", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8de1c132c9dd43e38f7284052159a38a", async() => {
                 BeginContext(1561, 6, true);
                 WriteLiteral("重设验证应用");
                 EndContext();
@@ -402,7 +402,7 @@ else
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(1602, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5cdc0095d1cd4bec913f8a54acfed7d7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "786ab3da222c4e81ba78cd8a4cffb599", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

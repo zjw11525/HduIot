@@ -8,3 +8,14 @@ C:\Users\Administrator\Desktop\ASP.NET core\MQTTServer\MQTTServer\obj\Release\ne
 C:\Users\Administrator\Desktop\ASP.NET core\MQTTServer\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\ASP.NET core\MQTTServer\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.dll
 C:\Users\Administrator\Desktop\ASP.NET core\MQTTServer\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.pdb
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\bin\Release\netcoreapp2.1\MQTTServer.deps.json
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\bin\Release\netcoreapp2.1\MQTTServer.runtimeconfig.json
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\bin\Release\netcoreapp2.1\MQTTServer.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\bin\Release\netcoreapp2.1\MQTTServer.dll
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\bin\Release\netcoreapp2.1\MQTTServer.pdb
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.dll
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Release\netcoreapp2.1\MQTTServer.pdb
