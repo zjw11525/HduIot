@@ -32,8 +32,8 @@ namespace MQTTClient
             {
                 var options = new MqttClientTcpOptions
                 {
-                    //Server = "114.55.171.95",
-                    Server = "127.0.0.1",
+                    Server = "114.55.171.95",
+                    //Server = "127.0.0.1",
                     ClientId = Guid.NewGuid().ToString().Substring(0, 5),
                     UserName = "11@qq.com",
                     Password = "123423",

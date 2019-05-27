@@ -87,7 +87,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h2>\r\n\r\n<div class=\"alert alert-warning\" role=\"alert\">\r\n    <p>\r\n        <span class=\"glyphicon glyphicon-warning-sign\"></span>\r\n        <strong>禁用双重认证</strong>\r\n    </p>\r\n    <p>\r\n        禁用双重认证不会更改验证应用程序中使用的密钥。如果你想换钥匙\r\n        在验证应用程序中使用");
             EndContext();
             BeginContext(409, 41, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53a231057b8c43f2be301de390c40c96", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "450cb972241f4315936d6ab489e03b39", async() => {
                 BeginContext(444, 2, true);
                 WriteLiteral("重置");
                 EndContext();
@@ -109,7 +109,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n    </p>\r\n</div>\r\n\r\n<div>\r\n    ");
             EndContext();
             BeginContext(483, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c57440bfdc14c2e85ec753f8dfe2dc3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7ef2be922204f65b6be74b4894fc209", async() => {
                 BeginContext(522, 76, true);
                 WriteLiteral("\r\n        <button class=\"btn btn-danger\" type=\"submit\">禁用双重认证</button>\r\n    ");
                 EndContext();

@@ -88,7 +88,7 @@ WriteAttributeValue("", 211, ManageNavPages.IndexNavClass(ViewContext), 211, 42,
             WriteLiteral(">");
             EndContext();
             BeginContext(255, 28, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcf37444e39142ae9b7daa366afc9feb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5988f4871cab4a86bd4bd2930fbb7f2c", async() => {
                 BeginContext(277, 2, true);
                 WriteLiteral("账户");
                 EndContext();
@@ -120,7 +120,7 @@ WriteAttributeValue("", 305, ManageNavPages.ChangePasswordNavClass(ViewContext),
             WriteLiteral(">");
             EndContext();
             BeginContext(358, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b5792e644184fdd8d317beda4c26a94", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee2ccfa6cce04a6397938dbb89f19333", async() => {
                 BeginContext(410, 2, true);
                 WriteLiteral("密码");
                 EndContext();
@@ -162,7 +162,7 @@ WriteAttributeValue("", 478, ManageNavPages.ExternalLoginsNavClass(ViewContext),
             WriteLiteral(">");
             EndContext();
             BeginContext(531, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "922f03713cd54fdfb0811486ea848696", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77f8b9e6b2ae451ebf0cc0b3f3f391ad", async() => {
                 BeginContext(582, 6, true);
                 WriteLiteral("其他账户登录");
                 EndContext();
@@ -203,7 +203,7 @@ WriteAttributeValue("", 621, ManageNavPages.TwoFactorAuthenticationNavClass(View
             WriteLiteral(">");
             EndContext();
             BeginContext(683, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3a98dfe22149a3a7474ddf207de70c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91a6150698274e6ea72f8c7f3361cd1a", async() => {
                 BeginContext(723, 4, true);
                 WriteLiteral("双重认证");
                 EndContext();
@@ -235,7 +235,7 @@ WriteAttributeValue("", 753, ManageNavPages.PersonalDataNavClass(ViewContext), 7
             WriteLiteral(">");
             EndContext();
             BeginContext(804, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5c42a11bbdb4c81b123b0d3b6bc0e71", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "527d33ea92c74142bed4fd7959f51c9d", async() => {
                 BeginContext(833, 4, true);
                 WriteLiteral("个人资料");
                 EndContext();
