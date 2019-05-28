@@ -17,6 +17,7 @@ namespace MQTTClient
         public static void Main()
         {
             Task.Run(async () => { await ConnectMqttServerAsync(); });
+            //Console.ReadKey();
         }
         public static async Task ConnectMqttServerAsync()
         {

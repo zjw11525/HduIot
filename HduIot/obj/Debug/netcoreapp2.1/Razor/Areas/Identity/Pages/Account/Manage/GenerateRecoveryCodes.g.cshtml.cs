@@ -108,7 +108,7 @@ Write(ViewData["Title"]);
         在验证应用程序中使用");
             EndContext();
             BeginContext(534, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "519c9373a427425bb62b13b0a2483462", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96cfd7606d0346c49b1bcc9cfca6e476", async() => {
                 BeginContext(569, 8, true);
                 WriteLiteral("重置验证器密钥。");
                 EndContext();
@@ -130,7 +130,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n    </p>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(612, 123, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2883d91d1ab4b65b8f397e859bc2cad", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c50b36ecc0ed4a6193b8c2ba085c74a0", async() => {
                 BeginContext(651, 77, true);
                 WriteLiteral("\r\n        <button class=\"btn btn-danger\" type=\"submit\">生成恢复验证码</button>\r\n    ");
                 EndContext();

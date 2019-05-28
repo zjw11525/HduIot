@@ -6,5 +6,8 @@
         <td><a asp-controller="Device" asp-action="ChangeSwitch" asp-route-Id="@Model.Id">@Model.Switch</a></td>
         <td>@Model.Message</td>
         <td>@Model.DeviceKey</td>
+        <td>
+            <img src="~/images/@Model.User/@Model.Name/1.jpg" width="128" height="128" />
+        </td>
         <td><a asp-controller="Device" asp-action="Delete" asp-route-Id="@Model.Id">删除设备</a></td>
     </tr>

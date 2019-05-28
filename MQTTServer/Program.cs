@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.IO;
 
 namespace MqttServerTest
 {
@@ -38,7 +39,7 @@ namespace MqttServerTest
         {
             MqttNetTrace.TraceMessagePublished += MqttNetTrace_TraceMessagePublished;
             new Thread(StartMqttServer).Start();
-
+            //Console.ReadKey();
             //while (true)
             //{
             //    var inputString = Console.ReadLine().ToLower().Trim();
@@ -148,6 +149,20 @@ namespace MqttServerTest
                         device.Message = _message[2];
                         devices.SaveChanges();
                     }
+                    if ((_message.Length > 3) && (_topic[1] == device.Name))
+                    {
+                        if (!Directory.Exists($"wwwroot\\images\\{ device.User}\\{device.Name}"))
+                            Directory.CreateDirectory($"wwwroot\\images\\{ device.User}\\{device.Name}");
+                        FileStream image = File.OpenWrite($"wwwroot\\images\\{device.User}\\{device.Name}\\1.jpg");
+                        for (int i = 3; i < _message.Length; i++)
+                        {
+                            byte[] b = new byte[1];
+                            b[0] = Convert.ToByte(_message[i]);
+                            image.Seek(i-3, SeekOrigin.Begin);
+                            image.Write(b, 0, 1);
+                        }
+                        image.Close();
+                    }//图片
                 }
             }
         }
