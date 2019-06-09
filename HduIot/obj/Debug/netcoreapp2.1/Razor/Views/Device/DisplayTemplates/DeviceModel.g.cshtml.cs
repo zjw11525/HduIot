@@ -79,7 +79,7 @@ using HduIot.Models;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(129, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa49fe54ec2e472a86621930b1d6d491", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ffe3980378f0411fb34a87f0a1075224", async() => {
                 BeginContext(208, 12, false);
 #line 6 "C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\Views\Device\DisplayTemplates\DeviceModel.cshtml"
                                                                                      Write(Model.Switch);
@@ -140,7 +140,7 @@ using HduIot.Models;
             WriteLiteral("</td>\r\n        <td>\r\n            ");
             EndContext();
             BeginContext(325, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7af617707f284d4ea4e358062b5afa87", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b094d336cbba44cf82b3f06034d79436", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -174,7 +174,7 @@ AddHtmlAttributeValue("", 356, Model.Name, 356, 11, false);
             WriteLiteral("\r\n        </td>\r\n        <td>");
             EndContext();
             BeginContext(431, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a029a21ba794448b52e40482ca5175e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1bf54760bddc4bfab91cae096d7de1c6", async() => {
                 BeginContext(503, 4, true);
                 WriteLiteral("删除设备");
                 EndContext();

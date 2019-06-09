@@ -73,3 +73,4 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Administrator\Desktop\ASP.NET core\HduIot\HduIot\obj\Release\netcoreapp2.1\Razor\Views\Device\protocol.g.cshtml.cs

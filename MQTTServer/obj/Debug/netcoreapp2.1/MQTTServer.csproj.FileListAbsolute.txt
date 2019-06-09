@@ -30,4 +30,3 @@ C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Debug\netcorea
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Debug\netcoreapp2.1\MQTTServer.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Debug\netcoreapp2.1\MQTTServer.dll
 C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Debug\netcoreapp2.1\MQTTServer.pdb
-C:\Users\Administrator\Desktop\ASP.NET core\HduIot\MQTTServer\obj\Debug\netcoreapp2.1\MQTTServer.csprojAssemblyReference.cache

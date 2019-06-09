@@ -13,19 +13,21 @@
             <img src="~/images/im1.jpg" alt="ASP.NET" class="img-responsive" />
             <div class="carousel-caption" role="option">
                 <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                    <<a class="btn btn-default" asp-area="" asp-controller="Device" asp-action="Protocol">接入协议</a>
+                    @*<a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
                         快速接入您的物联网设备
-                    </a>
+                    </a>*@
                 </p>
             </div>
         </div>
         <div class="item">
             <img src="~/images/im1.jpg" alt="Visual Studio" class="img-responsive" />
             <div class="carousel-caption" role="option">
-                <p>                   
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                <p> 
+                    <a class="btn btn-default" asp-area="Identity" asp-page="/Account/Register">加入我们</a>
+                    @*<a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
                         加入我们
-                    </a>
+                    </a>*@
                 </p>
             </div>
         </div>
@@ -61,29 +63,25 @@
     <div class="col-md-3">
         <h2>如何开始</h2>
         <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">添加设备</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">用户手册</a></li>
+            <li><a asp-area="Identity" asp-page="/Account/Register">注册为用户</a></li>
+            <li><a asp-area="" asp-controller="Device" asp-action="Console">设备控制台</a></li>
+            <li><a asp-area="" asp-controller="Device" asp-action="Protocol">接入协议</a></li>
             <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">协议测试工具</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">API接口</a></li>
         </ul>
     </div>
     <div class="col-md-3">
         <h2>概要</h2>
         <ul>
             <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">应用范例</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">添加设备</a></li>
             <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">用户手册</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">协议测试工具</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">API接口</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">适用场景</a></li>
         </ul>
     </div>
     <div class="col-md-3">
         <h2>关于</h2>
         <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">关于我们</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">联系方式</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">技术支持</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="About">关于我们</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Contact">联系我们</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Contact">技术支持</a></li>
         </ul>
     </div>
 </div>

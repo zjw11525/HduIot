@@ -35,6 +35,18 @@ namespace HduIot.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(DeviceModel device)
         {
+            DeviceContext devices = new DeviceContext();
+            string DeviceKey;
+            int count = 0;
+            do
+            {
+                DeviceKey = System.Guid.NewGuid().ToString();
+                var dbset = devices.Devices.Where(t => t.DeviceKey == DeviceKey);
+                count = dbset.Count();
+            } while (count != 0);//密码在数据库中不存在
+
+            device.DeviceKey = DeviceKey;
+
             if (ModelState.IsValid)
             {
                 await _deviceService.AddAsync(device);
@@ -64,6 +76,10 @@ namespace HduIot.Controllers
                 ViewBag.IsLogin = true;
                 return View(await _deviceService.GetllAllAsync(user.UserName));
             }
+        }
+        public async Task<IActionResult> Protocol()
+        {
+            return View();
         }
         public IActionResult ChangeSwitch(int Id)
         {
